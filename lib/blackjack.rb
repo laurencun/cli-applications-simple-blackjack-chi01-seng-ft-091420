@@ -63,12 +63,12 @@ end
  
 def runner
   #need to define variables card_total and sum 
+  welcome
   card_total = initial_round
-  welcome 
   initial_round
   hit?(card_total)
     until card_total > 21
-    hit?(card_total)
+    card_total = hit?(card_total)
   end
  end_game(card_total)
 end 

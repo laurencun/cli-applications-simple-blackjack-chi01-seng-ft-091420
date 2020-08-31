@@ -63,7 +63,7 @@ end
  
 def runner
   #need to define variables card_total and sum 
-  card_total = deal_card
+  card_total = initial_round
   welcome 
   initial_round
   hit?(card_total)
